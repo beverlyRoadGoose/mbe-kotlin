@@ -15,6 +15,10 @@ class MovieQueries {
         fun getTopRatedMovies(page: Int): String = URL(TOP_RATED_MOVIES_ENDPOINT + page).readText()
 
         fun getMovieDetails(movieId: Int): String = URL(
+            String.format("%s%s?api_key=%s&language=en-US&page=1", BASE_URL, movieId, MOVIE_DB_API_KEY)
+        ).readText()
+
+        fun getMovieVideos(movieId: Int): String = URL(
             String.format("%s%s/videos?api_key=%s&language=en-US", BASE_URL, movieId, MOVIE_DB_API_KEY)
         ).readText()
 
