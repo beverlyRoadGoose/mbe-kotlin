@@ -55,7 +55,7 @@ class MoviesManager {
         val n = results.length()
         var movieJsonObject: JSONObject
 
-        for (i in 0..n) {
+        for (i in 0 until n) {
             movieJsonObject = results.getJSONObject(i)
             val id = movieJsonObject.getInt("id")
             val title = movieJsonObject.getString("title")
