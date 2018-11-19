@@ -1,0 +1,8 @@
+/src/main/resources/application.properties
+/src/main/resources/application-test.properties
+/logs
+/target
+/.gradle
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+.env
